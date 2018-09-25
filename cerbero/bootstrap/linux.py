@@ -44,7 +44,7 @@ class UnixBootstrapper (BootstrapperBase):
 
 class DebianBootstrapper (UnixBootstrapper):
 
-    tool = 'sudo apt-get install %s'
+    tool = 'sudo apt-get -y install %s'
     packages = ['autotools-dev', 'automake', 'autoconf', 'libtool', 'g++',
                 'autopoint', 'make', 'cmake', 'bison', 'flex', 'yasm',
                 'pkg-config', 'gtk-doc-tools', 'libxv-dev', 'libx11-dev',
