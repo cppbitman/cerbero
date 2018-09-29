@@ -7,7 +7,8 @@ class Recipe(recipe.Recipe):
     version = '0.2'
     licenses = [License.BSD_like]
     stype = SourceType.TARBALL
-    url = 'http://freedesktop.org/software/pulseaudio/webrtc-audio-processing/{0}-{1}.tar.xz'.format(name, version)
+    #url = 'http://freedesktop.org/software/pulseaudio/webrtc-audio-processing/{0}-{1}.tar.xz'.format(name, version)
+    url = 'http://172.16.64.65:8081/artifactory/gstreamer/webrtc-audio-processing/{0}-{1}.tar.xz'.format(name, version)
 
     platform_deps = {Platform.ANDROID: ['gnustl']}
 
