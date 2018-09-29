@@ -5,7 +5,8 @@ class Recipe(recipe.Recipe):
     version = '1.2.8'
     licenses = [License.LGPLv2_1Plus]
     stype = SourceType.TARBALL
-    url = 'https://download.gnome.org/sources/json-glib/1.2/json-glib-%(version)s.tar.xz'
+    #url = 'https://download.gnome.org/sources/json-glib/1.2/json-glib-%(version)s.tar.xz'
+    url = 'http://172.16.64.65:8081/artifactory/gstreamer/json-glib-%(version)s.tar.xz'
     deps = ['glib']
     configure_options = '--enable-static'
     autoreconf = True
