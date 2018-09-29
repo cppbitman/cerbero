@@ -5,7 +5,8 @@ class Recipe(recipe.Recipe):
     name = 'libmpeg2'
     version = '0.5.1'
     stype = SourceType.TARBALL
-    url = 'http://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz'
+    #url = 'http://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz'
+    url = 'http://172.16.64.65:8081/artifactory/gstreamer/libmpeg2-0.5.1.tar.gz'
     licenses = [License.GPLv2Plus]
     autoreconf = True
     patches = ['libmpeg2/0001-Disable-AC_C_ALWAYS_INLINE.patch',
